@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('inicio/menu.css');
+@import url('inicio/banner.css');
+@import url('inicio/bienvenidos.css');
+@import url('inicio/noticias-index.css');
+@import url('inicio/galeria-index.css');
+@import url('inicio/footer.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    width: 100%;                    /*Ancho de toda la página*/
+    height: 50px;                   /*Altura de 50px para el header*/
+    background: #29335C;          /*Color de fondo*/            
+    color: #FFFFFF;               /*Color de las letras*/
+    position: fixed;                /*Posición fija para que siempre se vea*/
+    top: 0;                         /*Para que comience al inicio de la pantalla*/
+    left: 0;                        /*Para que comience al inicio de la pantalla*/
+    z-index: 100;                   /*Para que siempre esté por delante de los otros elementos*/
+}
+
+.contenedor{                        /*Para que todo esté alineado*/
+    width: auto;
+    margin: auto;
+}
+
+header .logo img{
+    float: left;                    /*Para que flote a la izquierda*/
+    width: 160px;
+    height: 50px;
+}
+
+header .contenedor{
+    display: table;                 /*Para limiar los float*/
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
